@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif ; 
+    color: navy;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.btn {
+    display: inline-block;
+    padding: 15px 60px;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    background: rgb(43, 90, 219);
+    color: rgb(53, 97, 218);
+    border-radius: 5px;
+    transition: background 500ms ease;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background: #000;
+}
+
+.titulo {
+    font-size: 2.2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 30px;
+    letter-spacing: 2px;
+}
+
+/* Navbar */
+#navbar {
+    width: 100%;
+    background: rgb(231, 15, 15);
+    color: #eee;
+    height: 80px;
+    position: fixed;
+}
+
+#navbar-container {
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 2rem;
+    font-family: "Roboto";
+}
+
+#navbar-items {
+    display: flex;
+    list-style: none;
+    text-transform: uppercase;
+}
+
+#navbar-items li {
+    padding: 10px;
+}
+
+/* Inicio */
+#inicio {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #eee;
+    background: url('../img/classicos.jpg') no-repeat center center/cover;
+
+
+    /* Overlay - Sobreposição */
+    background-color: rgba(0,0,0,0.5);
+    background-blend-mode: color;
+}
+
+#inicio-container {
+    text-align: center;
+}
+
+#inicio-container h2 {
+    font-size: 2.5rem;
+    font-family: 'Roboto';
+}
+
+#inicio-container p {
+    font-size: 1.2rem;
+    padding: 7px 0;
+}
+
+/* Sobre */
+#sobre {
+    width: 100%;
+    background: rgb(27, 57, 230);
+    color: #eee;
+    padding: 50px;
+}
+
+#sobre-container {
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 50px;
+}
+
+.sobre-item {
+    display: flex;
+    flex-direction: column;
+    background: rgb(214, 211, 24);
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.sobre-item-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Parágrafos */
+#paragrafos {
+    width: 100%;
+    padding: 50px;
+}
+
+#paragrafos-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#items {
+    width: 650px;
+}
+
+#items .item {
+    display: flex;
+    padding: 10px;
+    margin: 15px 0;
+    font-size: 1.2rem;
+}
+
+/* Depoimentos */
+.depoimento {
+    display: flex;
+    align-items: center;
+    font-size: 1.1rem;
+    background: #333;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 5px;
+}
+
+#depoimentos {
+    width: 100%;
+    background: #222;
+    color: #eee;
+    padding: 50px;
+}
+
+#depoimentos-container {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.depoimento h3{
+    font-style: italic;
+    font-size: 1.1rem;
+}
+
+.depoimento .depoimento-image {
+    height: 200px;
+    width: 198px;
+    border-radius: 50%;
+    margin: 15px;
+}
+
+/* Galeria */
+#galeria {
+    width: 90%;
+    margin: auto;
+    padding: 50px;
+}
+
+#galeria-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    justify-items: center;
+}
+
+.galeria-image {
+    display: inline-block;
+    width: 350px;
+    height: 350px;
+    border-radius: 5px;
+}
+
+/* Footer */
+#footer {
+    background: rgb(146, 137, 137);
+    color: black;
+    padding: 30px;
+    text-align: center;
+}
+
+/* Redes sociais */
+#social-media {
+    width: 100%;
+    background:rgb(146, 137, 137);
+    color: black;
+    padding: 5px;
+}
+
+#social-media-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    padding: 15px;
+}
+
+ /* Formulario */
+
+ .register-form {
+    max-width: 100%;
+    width: 100%;
+    right: 100%;
+    background-color: #fff;
+    padding: 25px 30px;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+    align-content: center;
+    justify-content: center;
+    align-items: center; 
+  }
+
+  .register-form .title-register{
+    font-size: 25px;
+    font-weight: 500;
+    width: 100%;
+    position: relative;
+  }
+  
+  .register-content form .user-details{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0 12px 0;
+  }
+  
+  form .user-details .input-box{
+    margin-bottom: 15px;
+    width: calc(100% / 2 - 20px);
+  }
+
+  form .input-box span.details{
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+  }
+
+  .user-details .input-box input{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    font-size: 16px;
+    border-radius: 5px;
+    padding-left: 15px;
+    border: 1px solid #ccc;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+    align-items: center;
+  }
+  
+  select{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    font-size: 16px;
+    border-radius: 5px;
+    padding-left: 15px;
+    border: 1px solid #ccc;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+    align-items: center;
+  }
+  
+  .user-details .input-box input:focus,
+  .user-details .input-box input:valid{
+    border-color: #6f6b70;
+  }
+  
+  form .button{
+    height: 45px;
+    margin: 35px 0;
+  }
+  
+  form .button input{
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background: linear-gradient(135deg, #727679, #040005);
+  }
+  form .button input:hover{
+   background: linear-gradient(-135deg, #fbf6fc, #383737);
+   color: #040005;
+   }
+
+
+
